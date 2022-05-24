@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>un formulaire</title>
+        <meta charset="UTF-8">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+    <body>
+        <form method="post">
+            <fieldset style="
+            border-radius: 4px;
+            background-color: rgb(246, 229, 208);">
+
+                <legend style="background-color: black; color: white;">Formulaire d'inscription</legend>
+
+            <label for="nom"><strong>Nom :</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="nom" id="nom" placeholder="Saisir votre nom"><br><br><br>
+
+            <label for="prenom"><strong>Prénom :</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="prenom" id="prenom" placeholder="Saisir votre prenom"><br><br><br>
+
+            <label for="email"><strong>Email :</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="mail" name="email" id="email" placeholder="Saisir votre Email"><br><br>
+
+            <p><strong>Genre :</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="mas"> Masculin</label><input type="radio" name="male" id="mas" checked>
+                <label for="fem">Féminin</label><input type="radio" name="female" id="fem"></p><br>
+
+            <strong>Photo :</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" name="dossier" value="choisir un fichier">&nbsp;&nbsp; <br><br><br>
+
+            <strong>Pays :</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select style="
+            outline: none;
+            border: none;">
+                <optgroup label="EUROPE">
+                    <option value="france">France</option>
+                    <option value="belgium">belgique</option>
+                    <option value="tukey">Turquie</option>
+                </optgroup>
+                <optgroup label="AMERIQUE">
+                    <option value="canada">Canada</option>
+                    <option value="brazil">Brésil</option>
+                    <option value="america">Amerique</option>
+                </optgroup>
+                <optgroup label="AFRIQUE">
+                    <option value="morocco">Maroc</option>
+                    <option value="senegal">Sénégal</option>
+                    <option value="Ejypt">Ejypte</option>
+                </optgroup>
+            </select><br><br>
+
+            Les langages utilisées : 
+            <select multiple>
+                
+            </select>
+
+            <p><strong>Domaines d'activités :</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="inf">Informatique</label><input type="checkbox" name="informatique" id="inf">&nbsp;&nbsp;
+                <label for="ges">Gestion</label><input type="checkbox" name="gestion" id="ges">&nbsp;&nbsp;
+                <label for="ped">Pédagogie</label><input type="checkbox" name="pédagogie" id="ped">
+            </p><br>
+
+            <input type="submit" value="Envoyer">&nbsp;&nbsp;<input type="submit" value="Annuler">
+        </fieldset>
+        </form>
+    </body>
+</html>
